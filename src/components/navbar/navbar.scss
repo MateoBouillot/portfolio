@@ -1,0 +1,43 @@
+.topbar {
+    height: 70px;
+    background-color:black ;
+    margin: 20px;
+    width: 98%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px white solid;
+
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &__logo {
+            width: 60px;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: white;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 18px;
+            position: relative;
+            bottom: 50px;
+        }
+    }
+}
+
+.outbar {
+    background-color: none;
+    height: 100px;
+    margin: 0 20px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+}

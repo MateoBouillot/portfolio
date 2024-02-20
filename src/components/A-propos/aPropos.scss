@@ -1,0 +1,49 @@
+
+.about {
+    position: relative;
+    margin-bottom: 40px;
+
+    &__text {
+        margin: 20px;
+        background-color: black;
+        clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+        width: 57%;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    &__img {
+        background-color: black;
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 30% 100%);
+        width: 55%;
+        position: absolute;
+        height: 300px;
+        top: 0px;
+        right: 10px;
+        border-radius: 10px;
+    }
+}
+
+.aboutb {
+    position: relative;
+
+    &__text {
+        margin: 20px;
+        background-color: black;
+        clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+        width: 57%;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    &__img {
+        background-color: black;
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        width: 55%;
+        position: absolute;
+        height: 300px;
+        top: 0px;
+        right: 10px;
+        border-radius: 10px;
+    }
+}
