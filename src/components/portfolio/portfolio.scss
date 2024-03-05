@@ -36,24 +36,64 @@
     justify-content: center;
     align-items: center;
 
-    &__link {
-        width: 50%;
-        height: 100%;
+    &__left {
+        width: 32%;
+        height: 65%;
         background-color: black;
         border: solid 2px white;
         border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 18.1%;
     }
 
-    &__text {
-        width: 50%;
-        height: 100%;
+    &__right {
+        width: 32%;
+        height: 65%;
         background-color: black;
         border: solid 2px white;
         border-radius: 10px;
-        color: white;
+        position: absolute;
+        right: 17.5%;
+
+        &__text{
+            color: white;
+        }
     }
 }
 
-.none {
-    display: none;
+.old {
+    z-index: 5;
+}
+
+.new {
+    z-index: 0;
+}
+
+.card {
+    display: block;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgb(216, 214, 214);
+    border: solid 3px white;
+
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.left {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.right {
+    font-size: 30px;
+    cursor: pointer;
 }
