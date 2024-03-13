@@ -1,3 +1,5 @@
+@import '../../variable.scss';
+
 .outer {
     display: flex;
     align-items: center;
@@ -7,7 +9,7 @@
 .form {
     width: 70%;
     height: 600px;
-    background-color: black;
+    background-color: $primary-color;
     color: white;
     display: flex;
     align-items: center;

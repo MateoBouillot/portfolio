@@ -1,6 +1,8 @@
+@import '../../variable.scss';
+
 .bg {
     margin-top: 100px;
-    background-color: black;
+    background-color: $primary-color;
     height: 1000px;
     width: 100%;
     display: flex;
@@ -9,23 +11,14 @@
     box-shadow: 0px -16px 20px 18px rgba(0, 0, 0, 0.48);
 
     &__inner {
-        box-shadow: 0px 0px 20px 18px rgba(126, 126, 126, 0.48);
-        background-color: white;
+        box-shadow: 0px 0px 20px 18px rgba(79, 26, 138, 0.48);
+        background-color: $secondary-color;
         width: 80%;
         height: 80%;
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
-
-        &__book {
-            width: 90%;
-            height: 90%;
-            background-color: blueviolet;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
     }
 }
 
@@ -39,7 +32,7 @@
     &__left {
         width: 32%;
         height: 65%;
-        background-color: black;
+        background-color: $primary-color;
         border: solid 2px white;
         border-radius: 10px;
         display: flex;
@@ -52,7 +45,7 @@
     &__right {
         width: 32%;
         height: 65%;
-        background-color: black;
+        background-color: $primary-color;
         border: solid 2px white;
         border-radius: 10px;
         position: absolute;

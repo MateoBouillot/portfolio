@@ -1,23 +1,15 @@
 import './portfolio.scss'
-import kasa from '../../assets/Kasa.png'
-import OMF from '../../assets/OMF.png'
-import booki from '../../assets/Booki.png'
-import carducci from '../../assets/carducci.png'
-import event from '../../assets/77event.png'
+import { list } from '../../assets/texts'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useDispatch, useSelector } from 'react-redux'
 import { pageLeft, pageRight, pageStop } from '../../redux/bookSlice'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons'
 
 function Portfolio() {
     const dispatch = useDispatch()
-    const list = [
-        { link: 'https://mateobouillot.github.io/Ohmyfood-open-classrooms/', img: OMF },
-        { link: 'https://op-react-kasa-8r0a0hr1m-mateos-projects-9646288c.vercel.app', img: kasa },
-        { link: 'https://mateobouillot.github.io/booki-open-classrooms/', img: booki },
-        { link: 'https://mateobouillot.github.io/nina-carducci-open-classrooms/', img: carducci },
-        { link: 'https://op-projet-10.vercel.app', img: event }
-    ]
+
 
     const [index, setIndex] = useState(0)
     const { turningPage } = useSelector((state) => state.book)
@@ -51,9 +43,9 @@ function Portfolio() {
     }
 
     return <>
-        <div className='bg'>
+        <div className='bg' id='portfolio' >
             <div className='bg__inner'>
-                <p className='left' onClick={handleClickLeft}>A</p>
+                <div className='left' onClick={handleClickLeft}><FontAwesomeIcon icon={faCaretLeft} size='2xl' /></div>
                     <div className='website'>
                         { turningPage == null ? 
                             <><div href='' className='website__left'>
@@ -117,7 +109,7 @@ function Portfolio() {
                         : <p>cassé</p>
                         }
                     </div>
-                <p className='right' onClick={handleClickRight}>A</p>
+                <div className='right' onClick={handleClickRight}><FontAwesomeIcon icon={faCaretRight} size='2xl' /></div>
             </div>
         </div>
     </>
