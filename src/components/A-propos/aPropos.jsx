@@ -91,13 +91,13 @@ function Apropos() {
                 animate={{ clipPath: ['polygon(100% 0, 100% 0, 100% 100%, 100% 100%)', 'polygon(30% 0, 100% 0, 100% 100%, 30% 100%)', 'polygon(30% 0, 100% 0, 100% 100%, 0% 100%)'] }}
                 transition={{ duration: 1, times: [0, 0.8, 1] }}
             >
-                <h2 className='aboutb__text__title'>J'ai suivi a partir de juillet 2023 une formation Open Classrooms</h2>
-                <p className='aboutb__text__txt1'>Grâce a cette formation j'ai pu découvrir différentes facettes 
-                du metier de developpeur. Je n'ai pas été formé qu'à l'intégration pur et dur j'ai pu, au fil des 
-                projets développer mes compétences d'optimisation, de SEO, de debogage mais aussi de gestion de projets</p>
-                <p className='aboutb__text__txt2'>Quand à l'intégration j'ai eu l'occasion d'utiliser les bases tel qu'HTML et css 
-                tout au long de la formation mais j'ai pu aussi apprendre a manier le javascript ainsi que certaines 
-                librairies tels que React.js et Redux.</p>
+                <h2 className='aboutb__text__title'>J'ai suivi a partir de juillet 2023 <br />une formation Open Classrooms</h2>
+                <h3 className='aboutb__text__subtitle'>Grâce a cette formation j'ai pu découvrir <br />différentes facettes 
+                du metier de developpeur. </h3>
+                <p className='aboutb__text__txt2'>Je n'ai pas été formé qu'à l'intégration pur et dur j'ai pu, au fil des 
+                projets développer  <br />mes compétences d'optimisation, de SEO, de debogage mais aussi de gestion de projets</p>
+                <p className='aboutb__text__txt3'>Quand à l'intégration j'ai eu l'occasion d'utiliser les bases tel qu'HTML et css <br />
+                tout au long de la formation mais j'ai pu aussi apprendre a manier <br />le javascript ainsi que certaines librairies tels que React.js et Redux.</p>
             </motion.div>
         </article>
     </section>

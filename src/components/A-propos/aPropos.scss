@@ -101,6 +101,38 @@
         right: 10px;
         border-radius: 10px;
         color: white;
+
+        &__title {
+            font-family: 'Open sans';
+            font-size: 25px;
+            position: relative;
+            right: 5%;
+            text-align: end;
+        }
+
+        &__subtitle {
+            font-family: 'Open sans';
+            font-size: 21px;
+            position: relative;
+            right: 20%;
+            text-align: end;
+        }
+
+        &__txt2 {
+            font-family: 'Open sans';
+            font-size: 19px;
+            position: relative;
+            right: 10%;
+            text-align: end;
+        }
+
+        &__txt3 {
+            font-family: 'Open sans';
+            font-size: 19px;
+            position: relative;
+            right: 5%;
+            text-align: end;
+        }
     }
 }
 
