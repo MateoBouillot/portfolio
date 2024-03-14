@@ -1,5 +1,5 @@
 import './navbar.scss'
-import logo from '../../assets/Logow.png'
+import logo from '../../assets/logow.png'
 import { motion } from "framer-motion"
 import { useDispatch, useSelector } from 'react-redux'
 import { english, francais } from '../../redux/langSlice'
