@@ -15,15 +15,18 @@
 .about {
     position: relative;
     margin-bottom: 40px;
+    top: -30px;
 
     &__text {
-        margin: 20px;
         background-color: $primary-color;
         clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-        width: 57%;
+        width: 58%;
         height: 350px;
         border-radius: 10px;
         color: white;
+        position: relative;
+        left: 5px;
+
 
         &__title {
             font-family: 'Montserrat';
@@ -68,37 +71,45 @@
     &__img {
         background-color: $primary-color;
         clip-path: polygon(0% 0, 100% 0, 100% 100%, 30% 100%);
-        width: 55%;
+        width: 56%;
         position: absolute;
         height: 350px;
         top: 0px;
-        right: 10px;
+        right: 5px;
         border-radius: 10px;
     }
 }
 
+.matrice {
+    border-radius: 10px;
+    position: relative;
+    left: 40px;
+}
+
 .aboutb {
     position: relative;
+    top: -30px;
 
     &__img {
-        margin: 20px;
         background-color: $primary-color;
         clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
-        width: 57%;
+        width: 58%;
         height: 350px;
         border-radius: 10px;
         display: flex;
         justify-content: center;
+        position: relative;
+        left: 5px;
     }
 
     &__text {
         background-color: $primary-color;
         clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-        width: 55%;
+        width: 56%;
         position: absolute;
         height: 350px;
         top: 0px;
-        right: 10px;
+        right: 5px;
         border-radius: 10px;
         color: white;
 

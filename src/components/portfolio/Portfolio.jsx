@@ -1,5 +1,5 @@
 import './portfolio.scss'
-import { list } from '../../assets/texts'
+import { list, frportfoliotxt } from '../../assets/texts'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useDispatch, useSelector } from 'react-redux'
@@ -51,10 +51,16 @@ function Portfolio() {
                             <><div href='' className='website__left'>
                                 <a href={list[index].link} className='card' target='_blank' rel='noreferrer'>
                                     <img className='card__img' src={list[index].img} alt='website screenshot'/>
+                                    <p className='card__desc'>{frportfoliotxt[index].desc}</p>
                                 </a>
                             </div>
                             <div className='website__right'>
-                                <p className='website__right__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora iure ducimus accusantium reprehenderit animi necessitatibus beatae optio autem perferendis, sequi error! Odit autem omnis sint dolorem modi ipsum recusandae!</p>                        
+                                <h2 className='website__right__title'>Contexte</h2>
+                                <p className='website__right__txt'>{frportfoliotxt[index].contexte}</p>
+                                <h2 className='website__right__title'>Compétences utilisé</h2>
+                                <p className='website__right__txt'>{frportfoliotxt[index].compétences}</p>
+                                <h2 className='website__right__title'>Experience tiré</h2>
+                                <p className='website__right__txt'>{frportfoliotxt[index].experience}</p>
                             </div></> :
                         turningPage == 'left' ? 
                             <><motion.div 
@@ -64,14 +70,21 @@ function Portfolio() {
                             href='' className='website__left old'>
                                 <a href={ index == list.length-1? list[0].link : list[index+1].link } className='card' target='_blank' rel='noreferrer'>
                                     <img className='card__img' src={ index == list.length-1? list[0].img : list[index+1].img } alt='website screenshot'/>
+                                    <p className='card__desc'>{index == list.length-1? frportfoliotxt[0].desc : frportfoliotxt[index+1].desc }</p>
                                 </a>
                             </motion.div>
                             <div className='website__right old'>
-                                <p className='website__right__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora iure ducimus accusantium reprehenderit animi necessitatibus beatae optio autem perferendis, sequi error! Odit autem omnis sint dolorem modi ipsum recusandae!</p>                        
+                                <h2 className='website__right__title'>Contexte</h2>
+                                <p className='website__right__txt'>{index == list.length-1? frportfoliotxt[0].contexte : frportfoliotxt[index+1].contexte}</p>
+                                <h2 className='website__right__title'>Compétences utilisé</h2>
+                                <p className='website__right__txt'>{index == list.length-1? frportfoliotxt[0].compétences : frportfoliotxt[index+1].compétences}</p>
+                                <h2 className='website__right__title'>Experience tiré</h2>
+                                <p className='website__right__txt'>{index == list.length-1? frportfoliotxt[0].experience : frportfoliotxt[index+1].experience}</p>                         
                             </div>
                             <div href='' className='website__left new'>
                                 <a href={list[index].link} className='card' target='_blank' rel='noreferrer'>
                                     <img className='card__img' src={list[index].img} alt='website screenshot'/>
+                                    <p className='card__desc'>{frportfoliotxt[index].desc}</p>
                                 </a>
                             </div>
                             <motion.div 
@@ -79,12 +92,18 @@ function Portfolio() {
                                 transition={{ duration: 2, times: [0, 0.3, 0.49, 0.5, 1] }}
                                 style={{ transformOrigin: 'left', zIndex: 5 }}
                             className='website__right new'>
-                                <p className='website__right__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora iure ducimus accusantium reprehenderit animi necessitatibus beatae optio autem perferendis, sequi error! Odit autem omnis sint dolorem modi ipsum recusandae!</p>                        
+                                <h2 className='website__right__title'>Contexte</h2>
+                                <p className='website__right__txt'>{frportfoliotxt[index].contexte}</p>
+                                <h2 className='website__right__title'>Compétences utilisé</h2>
+                                <p className='website__right__txt'>{frportfoliotxt[index].compétences}</p>
+                                <h2 className='website__right__title'>Experience tiré</h2>
+                                <p className='website__right__txt'>{frportfoliotxt[index].experience}</p>                            
                             </motion.div></>:
                         turningPage == 'right' ? 
                         <><div href='' className='website__left old'>
                             <a href={ index == 0? list[list.length-1].link : list[index-1].link } className='card' target='_blank' rel='noreferrer'>
                                 <img className='card__img' src={ index == 0? list[list.length-1].img : list[index-1].img } alt='website screenshot'/>
+                                <p className='card__desc'>{index == 0? frportfoliotxt[list.length-1].desc : frportfoliotxt[index-1].desc }</p>
                             </a>
                         </div>
                         <motion.div 
@@ -92,7 +111,12 @@ function Portfolio() {
                             transition={{ duration: 1 }}
                             style={{ transformOrigin: 'left' }}
                         className='website__right old'>
-                            <p className='website__right__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora iure ducimus accusantium reprehenderit animi necessitatibus beatae optio autem perferendis, sequi error! Odit autem omnis sint dolorem modi ipsum recusandae!</p>                        
+                                <h2 className='website__right__title'>Contexte</h2>
+                                <p className='website__right__txt'>{index == 0? frportfoliotxt[list.length-1].contexte : frportfoliotxt[index-1].contexte}</p>
+                                <h2 className='website__right__title'>Compétences utilisé</h2>
+                                <p className='website__right__txt'>{index == 0? frportfoliotxt[list.length-1].compétences : frportfoliotxt[index-1].compétences}</p>
+                                <h2 className='website__right__title'>Experience tiré</h2>
+                                <p className='website__right__txt'>{index == 0? frportfoliotxt[list.length-1].experience : frportfoliotxt[index-1].experience}</p>                       
                         </motion.div>
                         <motion.div 
                             animate={{ rotateY: [0, 90, 90, 90, 0], opacity: [0, 0, 0, 1, 1] }}
@@ -101,10 +125,16 @@ function Portfolio() {
                         href='' className='website__left new'>
                             <a href={list[index].link} className='card' target='_blank' rel='noreferrer'>
                                 <img className='card__img' src={list[index].img} alt='website screenshot'/>
+                                <p className='card__desc'>{frportfoliotxt[index].desc}</p>
                             </a>
                         </motion.div>
                         <div className='website__right new'>
-                            <p className='website__right__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora iure ducimus accusantium reprehenderit animi necessitatibus beatae optio autem perferendis, sequi error! Odit autem omnis sint dolorem modi ipsum recusandae!</p>                        
+                            <h2 className='website__right__title'>Contexte</h2>
+                            <p className='website__right__txt'>{frportfoliotxt[index].contexte}</p>
+                            <h2 className='website__right__title'>Compétences utilisé</h2>
+                            <p className='website__right__txt'>{frportfoliotxt[index].compétences}</p>
+                            <h2 className='website__right__title'>Experience tiré</h2>
+                            <p className='website__right__txt'>{frportfoliotxt[index].experience}</p>             
                         </div></>
                         : <p>cassé</p>
                         }

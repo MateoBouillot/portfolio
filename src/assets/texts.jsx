@@ -13,3 +13,35 @@ export const list = [
     { link: 'https://op-projet-10.vercel.app', img: event }
 ]
 
+export const frportfoliotxt = [
+    {
+        desc: `Oh my food, site web pour restaurateur, à la manière d'uber eats`,
+        contexte: 'Projet Open Classrooms',
+        compétences: 'Ce projet à été réalisé en HTML et scss, le scss à notamment été beaucoup utilisé pour des animations',
+        experience: `Grâce à ce projet j'ai pu apprendre à utiliser les animations en keyframe du CSS`
+    },
+    {
+        desc: '',
+        contexte: '',
+        compétences: '',
+        experience: ''
+    },
+    {
+        desc: '',
+        contexte: '',
+        compétences: '',
+        experience: ''
+    },
+    {
+        desc: '',
+        contexte: '',
+        compétences: '',
+        experience: ''
+    },
+    {
+        desc: '',
+        contexte: '',
+        compétences: '',
+        experience: ''
+    },
+]
