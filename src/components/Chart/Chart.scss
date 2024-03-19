@@ -1,3 +1,5 @@
+@import '../../variable.scss';
+
 .radar {
     width: 50%;
 }
@@ -6,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     height: auto;
+    background-color: $primary-color;
 }

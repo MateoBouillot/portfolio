@@ -8,11 +8,16 @@ import react from '../../assets/react.png'
 import sass from '../../assets/sass.png'
 import redux from '../../assets/redux.png'
 import matrice from '../../assets/matrice.jpg'
+import { frBottomRightTxt, frTopLeftTxt, enBottomRightTxt, enTopLeftTxt } from '../../assets/texts'
+import { useSelector } from 'react-redux'
 
 
 
 function Apropos() {
 
+    const { language } = useSelector((state) => state.lang)
+    let bottomRightTxt = language == 'fr'? frBottomRightTxt : enBottomRightTxt
+    let topLeftTxt = language == 'fr'? frTopLeftTxt : enTopLeftTxt
 
     return <section id='about' >
         <article className='about' >
@@ -20,11 +25,11 @@ function Apropos() {
                 animate={{ clipPath: ['polygon(0 0, 0 0, 0 100%, 0% 100%)', 'polygon(0 0, 70% 0, 70% 100%, 0 100%)', 'polygon(0 0, 70% 0, 100% 100%, 0% 100%)'] }}
                 transition={{ duration: 1, times: [0, 0.8, 1] }}
             > 
-                <h1 className='about__text__title'>Matéo,<br/> intégrateur web</h1>
-                <h2 className='about__text__subtitle' >J'ai toujours été grandement intéressé par<br /> le fonctionnement des choses</h2>
-                <p className='about__text__txt1'>et le meilleur moyen de faire ca reste de créer sois-même.</p>
-                <p className='about__text__txt2'>Que ca soit jeux vidéo, applications ou site web un peu spécial<br /> j'ai toujours voulu savoir comment tout cela fonctionnais</p>
-                <p className='about__text__txt3'>Maintenant je le peux, pour les site web, du moins.</p>
+                <h1 className='about__text__title'>{topLeftTxt.title1}<br/>{topLeftTxt.title2}</h1>
+                <h2 className='about__text__subtitle' >{topLeftTxt.subtitle1}<br/>{topLeftTxt.subtitle2}</h2>
+                <p className='about__text__txt1'>{topLeftTxt.txt1}</p>
+                <p className='about__text__txt2'>{topLeftTxt.txt21}<br/>{topLeftTxt.txt22}</p>
+                <p className='about__text__txt3'>{topLeftTxt.txt3}</p>
             </motion.div>
             <motion.div className='about__img'
                 animate={{ clipPath: ['polygon(100% 0, 100% 0, 100% 100%, 100% 100%)', 'polygon(30% 0, 100% 0, 100% 100%, 30% 100%)', 'polygon(0 0, 100% 0, 100% 100%, 30% 100%)'] }}
@@ -91,13 +96,10 @@ function Apropos() {
                 animate={{ clipPath: ['polygon(100% 0, 100% 0, 100% 100%, 100% 100%)', 'polygon(30% 0, 100% 0, 100% 100%, 30% 100%)', 'polygon(30% 0, 100% 0, 100% 100%, 0% 100%)'] }}
                 transition={{ duration: 1, times: [0, 0.8, 1] }}
             >
-                <h2 className='aboutb__text__title'>J'ai suivi a partir de juillet 2023 <br />une formation Open Classrooms</h2>
-                <h3 className='aboutb__text__subtitle'>Grâce a cette formation j'ai pu découvrir <br />différentes facettes 
-                du metier de developpeur. </h3>
-                <p className='aboutb__text__txt2'>Je n'ai pas été formé qu'à l'intégration pur et dur j'ai pu, au fil des 
-                projets développer  <br />mes compétences d'optimisation, de SEO, de debogage mais aussi de gestion de projets</p>
-                <p className='aboutb__text__txt3'>Quand à l'intégration j'ai eu l'occasion d'utiliser les bases tel qu'HTML et css <br />
-                tout au long de la formation mais j'ai pu aussi apprendre a manier <br />le javascript ainsi que certaines librairies tels que React.js et Redux.</p>
+                <h2 className='aboutb__text__title'>{bottomRightTxt.title1}<br/>{bottomRightTxt.title2}</h2>
+                <h3 className='aboutb__text__subtitle'>{bottomRightTxt.subtitle1}<br/>{bottomRightTxt.subtitle2}</h3>
+                <p className='aboutb__text__txt2'>{bottomRightTxt.txt21}<br/>{bottomRightTxt.txt22}</p>
+                <p className='aboutb__text__txt3'>{bottomRightTxt.txt31}<br/>{bottomRightTxt.txt32}<br/>{bottomRightTxt.txt33}</p>
             </motion.div>
         </article>
     </section>
