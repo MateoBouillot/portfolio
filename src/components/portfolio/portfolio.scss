@@ -56,7 +56,11 @@
         align-items: center;
         justify-content: center;
         position: absolute;
-        left: 0.5%;
+        left: 0.8%;
+
+        @include mediamaxwidth(1280px) {
+            left: 0.5%;
+        }
     }
 
     &__right {
