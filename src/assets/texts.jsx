@@ -84,10 +84,10 @@ export const frTopLeftTxt = {
     title2: `intégrateur web`,
     subtitle1: `J'ai toujours été grandement intéressé par`,
     subtitle2: `le fonctionnement des choses`,
-    txt1: `et le meilleur moyen de faire ca reste de créer sois-même.`,
-    txt21: `Que ca soit jeux vidéo, applications ou site web un peu spécial`,
-    txt22: `j'ai toujours voulu savoir comment tout cela fonctionnais.`,
-    txt3: `Maintenant je le peux, pour les site web, du moins.`
+    txt1: `et le meilleur moyen de faire ça, c'est de créer soi-même.`,
+    txt21: `Que ce soit jeu vidéo, application ou site web un peu spécial`,
+    txt22: `j'ai toujours voulu savoir comment tout cela fonctionnait.`,
+    txt3: `Maintenant je le sais, au moins pour les sites web.`
 }
 
 export const enTopLeftTxt = {
@@ -102,15 +102,16 @@ export const enTopLeftTxt = {
 }
 
 export const frBottomRightTxt = {
-    title1: `J'ai suivi a partir de juillet 2023`,
+    title1: `J'ai suivi à partir de juillet 2023`,
     title2: `une formation Open Classrooms`,
-    subtitle1: `Grâce a cette formation j'ai pu découvrir`,
-    subtitle2: `différentes facettes du metier de developpeur.`,
-    txt21: `Je n'ai pas été formé qu'à l'intégration pur et dur j'ai pu, au fil des projets développer`,
-    txt22: `mes compétences d'optimisation, de SEO, de debogage mais aussi de gestion de projets`,
-    txt31: `Quand à l'intégration j'ai eu l'occasion d'utiliser les bases tel qu'HTML et CSS`,
+    subtitle1: `Grâce à cette formation j'ai pu découvrir`,
+    subtitle2: `différentes facettes du métier de développeur.`,
+    txt21: `Je n'ai pas été formé qu'à l'intégration pure et dure, j'ai pu, `,
+    txt22: `au fil des projets, développer mes compétences d'optimisation,`,
+    txt23: ` de SEO, de débogage mais aussi de gestion de projets`,
+    txt31: `Quant à l'intégration, j'ai eu l'occasion d'utiliser les bases telles qu'HTML et CSS`,
     txt32: `tout au long de la formation mais j'ai pu aussi apprendre a manier `,
-    txt33: `le javascript ainsi que certaines librairies tels que React.js et Redux.`
+    txt33: `le javascript ainsi que certaines librairies telles que React.js et Redux.`
 }
 
 export const enBottomRightTxt = {
@@ -118,8 +119,9 @@ export const enBottomRightTxt = {
     title2: `an Open Classrooms formation`,
     subtitle1: `Thanks to it, I've been able to discover `,
     subtitle2: `different aspects of a developer's life`,
-    txt21: `I haven't been trained only for basic developping, through different projects I was able`,
-    txt22: `to develop a few skills like optimisation, SEO, debugging or even a bit of project management`,
+    txt21: `I haven't been trained only for basic developping, through `,
+    txt22: `different projects I was able to develop a few skills`,
+    txt23: ` like optimisation, SEO, debugging or even a bit of project management`,
     txt31: `And for the raw developping I've been trained to use the basics like HTML and CSS`,
     txt32: `throughout the different projects but I was also able to learn how to use`,
     txt33: `javascript as well as some libraries like React.js and Redux.`

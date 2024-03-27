@@ -1,5 +1,13 @@
 $primary-color: black;
 $secondary-color: rgb(79, 26, 138); 
 
+@mixin mediamaxwidth($max) {
+    @media screen and (max-width: $max) {
+        @content;
+    }
+}
+
+// 1024 768 640
+
 
 

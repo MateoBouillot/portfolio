@@ -48,7 +48,7 @@ function Portfolio() {
     return <>
         <div className='bg' id='portfolio' >
             <div className='bg__inner'>
-                <div className='left' onClick={handleClickLeft}><FontAwesomeIcon icon={faCaretLeft} size='2xl' /></div>
+                <div className='bg__inner__left' onClick={handleClickLeft}><FontAwesomeIcon icon={faCaretLeft} size='2xl' /></div>
                     <div className='website'>
                         { turningPage == null ? 
                             <><div href='' className='website__left'>
@@ -142,7 +142,7 @@ function Portfolio() {
                         : <p>cassé</p>
                         }
                     </div>
-                <div className='right' onClick={handleClickRight}><FontAwesomeIcon icon={faCaretRight} size='2xl' /></div>
+                <div className='bg__inner__right' onClick={handleClickRight}><FontAwesomeIcon icon={faCaretRight} size='2xl' /></div>
             </div>
         </div>
     </>

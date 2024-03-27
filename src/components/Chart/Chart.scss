@@ -1,14 +1,186 @@
 @import '../../variable.scss';
 
-.radar {
+.language {
     width: 50%;
+    height: 100%;
+    position: relative;
+
+    &__title {
+        color: white;
+        position: absolute;
+        top: 5%;
+        left: 40%;
+        font: 600 34px 'Montserrat';
+
+        @include mediamaxwidth(1280px) {
+            font-size: 28px;
+        }
+    }
+
+    &__html {
+        position: absolute;
+        left: 22%;
+        top: 20%;
+
+        @include mediamaxwidth(1280px) {
+            top: 22%;
+        }
+    }
+
+    &__css {
+        position: absolute;
+        left: 22%;
+        top: 80%;
+
+        @include mediamaxwidth(1280px) {
+            top: 82%;
+        }
+    }
+
+    &__javascript {
+        position: absolute;
+        left: 22%;
+        top: 50%;
+
+        @include mediamaxwidth(1280px) {
+            top: 52%;
+        }
+    }
+
+    &__React {
+        position: absolute;
+        left: 80%;
+        top: 35%;
+
+        @include mediamaxwidth(1280px) {
+            top: 36%;   
+        }
+    }
+
+    &__sass {
+        position: absolute;
+        left: 80%;
+        top: 80%;
+
+        @include mediamaxwidth(1280px) {
+            top: 82%;   
+        }
+    }
+
+    &__htmlbar {
+        clip-path: polygon(100% 0, 100% 100%, 85% 100%, 85% 15%, 0 15%, 0 0);
+        width: 20%;
+        height: 15%;
+        background-color: $secondary-color;
+        position: absolute;
+        left: 39%;
+        top: 26%;
+    }
+
+    &__javabar {
+        clip-path: polygon(100% 100%, 0 100%, 0 85%, 85% 85%, 85% 0, 100% 0);
+        width: 20%;
+        height: 15%;
+        background-color: $secondary-color;
+        position: absolute;
+        left: 39%;
+        top: 43%;
+    }
+    
+    &__reactbar {
+        width: 25%;
+        height: 2.25%;
+        background-color: $secondary-color;
+        position: absolute;
+        left: 56%;
+        top: 41%;
+
+        @include mediamaxwidth(1280px) {
+            width: 24%;
+            left: 56.02%;
+        }
+    }
+
+    &__cssbar {
+        width: 42%;
+        height: 2.25%;
+        background-color: $secondary-color;
+        position: absolute;
+        left: 39%;
+        top: 86%;
+    }
 }
 
-.outer {
+.outerSkills {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     width: 70%;
-    height: auto;
+    height: 800px;
     background-color: $primary-color;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    gap: 10px;
 }
+
+.Skill {
+    background: url('../../assets/laurier.jpg') ;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-size: contain;
+    border: solid 5px $secondary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+    -4px 6px 40px 6px rgba(241, 220, 97, 0.07), 
+    -1px 1px 80px 9px rgba(241, 220, 97, 0.12);
+    cursor: pointer;
+    z-index: 5;
+
+    @include mediamaxwidth(1280px) {
+        width: 80px;
+        height: 80px;
+    }
+
+    &__title {
+        font: 600 20px 'Open Sans';
+
+        @include mediamaxwidth(1280px) {
+            font-size: 15px;
+        }   
+    }
+
+    &__logo {
+    height: 70%;
+    width: auto;
+}
+}
+
+.otherSkills {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+
+    &__title {
+        color: white;
+        font: 600 34px 'Montserrat';
+
+        @include mediamaxwidth(1280px) {
+            font-size: 28px;
+        }
+    }
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+}
+

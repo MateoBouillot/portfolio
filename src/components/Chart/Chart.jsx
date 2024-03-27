@@ -1,53 +1,65 @@
 import './Chart.scss'
-import { Radar } from 'react-chartjs-2'
-import { RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend, Chart as ChartJS } from 'chart.js'
 import { useSelector } from 'react-redux'
-
-ChartJS.register(
-    RadialLinearScale,
-    PointElement,
-    LineElement,
-    Filler,
-    Tooltip,
-    Legend
-)
-
+import css from '../../assets/css.png'
+import html from '../../assets/html.png'
+import javascript from '../../assets/javascript.png'
+import react from '../../assets/react.png'
+import sass from '../../assets/sass.png'
+import redux from '../../assets/redux.png'
+import framer from '../../assets/framer.svg'
+import { motion } from 'framer-motion'
 
 
-const options = {
-    scale: {
-        r: {
-            min: 0,
-            max: 10
-        }
-    },
-    plugins: {
-        legend: {
-            display: false
-        }
-    }
-}
-
-const data = {
-        labels: ['html', 'css', 'javascript', 'react', 'scss'],
-        datasets: [
-            {
-                label: 'skills',
-                data: [8, 7, 5, 6, 8],
-                fill: false,
-                borderColor: 'rgba(79, 26, 138, 1)',
-                borderWidth: 3,
-                tension: -0.05,
-            }
-        ]
-    }
 
 function Radarchart() {
     const { language } = useSelector((state) => state.lang)
 
-    return <div className='outer' id='skills' >
-        <div className='radar'>
-            <Radar data={data} options={options} className='radar__chart'/>
+    const hover = {
+        scale: 1.15,
+    }
+
+    return <div className='outerSkills' id='skills' >
+        <div className='language'>
+            <h2 className='language__title'>Languages</h2>
+            <motion.div className='Skill language__html' whileHover={hover}>
+                <img src={html} alt='html logo' className='Skill__logo' />
+            </motion.div>
+            <div className='language__htmlbar'></div>
+            <div className='language__javabar'></div>
+            <div className='language__reactbar'></div>
+            <div className='language__cssbar'></div>
+            <motion.div className='Skill language__css'  whileHover={hover}>
+                <img src={css} alt='css logo' className='Skill__logo' />
+            </motion.div>
+            <motion.div className='Skill language__javascript'  whileHover={hover}>
+                <img src={javascript} alt='javascript logo' className='Skill__logo' />
+            </motion.div>
+            <motion.div className='Skill language__React'  whileHover={hover}>
+                <img src={react} alt='react logo' className='Skill__logo' />
+            </motion.div>
+            <motion.div className='Skill language__sass'  whileHover={hover}>
+                <img src={sass} alt='sass logo' className='Skill__logo' />
+            </motion.div>
+        </div>
+        <div className='otherSkills'>
+            <h2 className='otherSkills__title'>{language == 'fr'? 'Bibliothèques React' : 'React libraries' }</h2>
+            <div className='block'>
+                <motion.div className='Skill block__redux' whileHover={hover}>
+                    <img src={redux} alt='redux logo' className='Skill__logo' />
+                </motion.div>
+                <motion.div className='Skill block__framermotion' whileHover={hover}>
+                    <img src={framer} alt='framer logo' className='Skill__logo' />
+                </motion.div>
+            </div>
+            <h2 className='otherSkills__title'>{language == 'fr'? 'Autres Compétences' : 'Other skills' }</h2>
+            <div className='block'>
+                <motion.div className='Skill block__debugging' whileHover={hover}>
+                    <h3 className='Skill__title'>{language == 'fr'? 'Débogage' : 'Debugging' }</h3>
+                </motion.div>
+                <motion.div className='Skill block__optimization' whileHover={hover}>
+                    <h3 className='Skill__title'>SEO</h3>
+                </motion.div>
+            </div>
         </div>
     </div>
 }

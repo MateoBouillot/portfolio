@@ -7,7 +7,6 @@ import javascript from '../../assets/javascript.png'
 import react from '../../assets/react.png'
 import sass from '../../assets/sass.png'
 import redux from '../../assets/redux.png'
-import matrice from '../../assets/matrice.jpg'
 import { frBottomRightTxt, frTopLeftTxt, enBottomRightTxt, enTopLeftTxt } from '../../assets/texts'
 import { useSelector } from 'react-redux'
 
@@ -25,17 +24,18 @@ function Apropos() {
                 animate={{ clipPath: ['polygon(0 0, 0 0, 0 100%, 0% 100%)', 'polygon(0 0, 70% 0, 70% 100%, 0 100%)', 'polygon(0 0, 70% 0, 100% 100%, 0% 100%)'] }}
                 transition={{ duration: 1, times: [0, 0.8, 1] }}
             > 
-                <h1 className='about__text__title'>{topLeftTxt.title1}<br/>{topLeftTxt.title2}</h1>
-                <h2 className='about__text__subtitle' >{topLeftTxt.subtitle1}<br/>{topLeftTxt.subtitle2}</h2>
-                <p className='about__text__txt1'>{topLeftTxt.txt1}</p>
-                <p className='about__text__txt2'>{topLeftTxt.txt21}<br/>{topLeftTxt.txt22}</p>
-                <p className='about__text__txt3'>{topLeftTxt.txt3}</p>
+                <div className='test'>
+                    <h1 className='about__text__title'>{topLeftTxt.title1}<br/>{topLeftTxt.title2}</h1>
+                    <h2 className='about__text__subtitle' >{topLeftTxt.subtitle1}<br/>{topLeftTxt.subtitle2}</h2>
+                    <p className='about__text__txt1'>{topLeftTxt.txt1}</p>
+                    <p className='about__text__txt2'>{topLeftTxt.txt21}<br/>{topLeftTxt.txt22}</p>
+                    <p className='about__text__txt3'>{topLeftTxt.txt3}</p>
+                </div>
             </motion.div>
             <motion.div className='about__img'
                 animate={{ clipPath: ['polygon(100% 0, 100% 0, 100% 100%, 100% 100%)', 'polygon(30% 0, 100% 0, 100% 100%, 30% 100%)', 'polygon(0 0, 100% 0, 100% 100%, 30% 100%)'] }}
                 transition={{ duration: 1, times: [0, 0.8, 1] }}
             >
-                <img className='matrice' src={matrice} alt='matrice' />
             </motion.div>
         </article>
         <article className='aboutb'>
@@ -96,10 +96,12 @@ function Apropos() {
                 animate={{ clipPath: ['polygon(100% 0, 100% 0, 100% 100%, 100% 100%)', 'polygon(30% 0, 100% 0, 100% 100%, 30% 100%)', 'polygon(30% 0, 100% 0, 100% 100%, 0% 100%)'] }}
                 transition={{ duration: 1, times: [0, 0.8, 1] }}
             >
-                <h2 className='aboutb__text__title'>{bottomRightTxt.title1}<br/>{bottomRightTxt.title2}</h2>
-                <h3 className='aboutb__text__subtitle'>{bottomRightTxt.subtitle1}<br/>{bottomRightTxt.subtitle2}</h3>
-                <p className='aboutb__text__txt2'>{bottomRightTxt.txt21}<br/>{bottomRightTxt.txt22}</p>
-                <p className='aboutb__text__txt3'>{bottomRightTxt.txt31}<br/>{bottomRightTxt.txt32}<br/>{bottomRightTxt.txt33}</p>
+
+                    <h2 className='aboutb__text__title'>{bottomRightTxt.title1}<br/>{bottomRightTxt.title2}</h2>
+                    <h3 className='aboutb__text__subtitle'>{bottomRightTxt.subtitle1}<br/>{bottomRightTxt.subtitle2}</h3>
+                    <p className='aboutb__text__txt2'>{bottomRightTxt.txt21}<br/>{bottomRightTxt.txt22}<br/>{bottomRightTxt.txt23}</p>
+                    <p className='aboutb__text__txt3'>{bottomRightTxt.txt31}<br/>{bottomRightTxt.txt32}<br/>{bottomRightTxt.txt33}</p>
+
             </motion.div>
         </article>
     </section>

@@ -7,9 +7,11 @@
 }
 
 #about {
-    background-color: $secondary-color;
     width: 99%;
     border-radius: 10px;
     height: 750px;
-    box-shadow:0px 0px 80px rgba(79, 26, 138, 1);
+
+    @include mediamaxwidth(1280px) {
+        height: 650px;        
+    }
 }

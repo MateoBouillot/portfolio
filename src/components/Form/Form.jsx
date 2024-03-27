@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import './Form.scss'
 import emailjs from '@emailjs/browser'
 import { useSelector } from 'react-redux'
@@ -6,22 +6,36 @@ import { useSelector } from 'react-redux'
 function Form() {
     const form = useRef()
     const { language } = useSelector((state) => state.lang)
+    const [sucsess, setSucsess] = useState(null)
+
+    let sucsessmsg = language == 'fr'? 'Votre message a été envoyé!' : 'Your message has been sent!'
+    let errormsg = language == 'fr'? 'Champs invalide ou manquant!' : 'Invalid or missing fields!'
+    let style = sucsess == false? { color: 'red' } : { color: 'white' }
 
     const sendmail = (e) => {
         e.preventDefault()
 
-        emailjs
-            .sendForm('service_slwwpjb', 'template_0humo89', form.current, {
-                publicKey: 'qqQU2UG6XpuG59utO',
-            })
-            .then(
-                () => {
-                    console.log('sucsess')
-                },
-                (error) => {
-                    console.log('fail', error.text)
-                }
+        if (form.current.user_name.value !== '') {
+            if (form.current.message.value !== '') {
+                emailjs
+             .sendForm('service_slwwpjb', 'template_0humo89', form.current, {
+                 publicKey: 'qqQU2UG6XpuG59utO',
+             })
+             .then(
+                 () => {
+                     setSucsess(true)
+                 },
+                 (error) => {
+                    console.log(error)
+                 }
             )
+            } else {
+                setSucsess(false)
+            }
+        } else {
+            setSucsess(false)
+        }
+        
     }
 
     return <div className='outer' id='contact' >
@@ -36,6 +50,7 @@ function Form() {
             <label className='form__text__label'>Message</label>
             <textarea name="message" className='form__text__textarea'/>
         </div>
+        <h4 className='sucsess' style={style} >{ sucsess === true? sucsessmsg : sucsess === false? errormsg : '' }</h4>
         <input type="submit" value="Send" className='form__btn'/>
     </form>
     </div>
