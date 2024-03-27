@@ -51,11 +51,10 @@
             left: 18%;
 
             @include mediamaxwidth(1440px) {
-                left: 10%;
+                left: 7%;
             }
             @include mediamaxwidth(1280px) {
                 font-size: 20px;
-                left: 7%;
             }
         }
 
@@ -67,7 +66,7 @@
             bottom: 10px;
 
             @include mediamaxwidth(1440px) {
-                left: 25%;
+                left: 20%;
             }
             @include mediamaxwidth(1280px) {
                 font-size: 15px;
