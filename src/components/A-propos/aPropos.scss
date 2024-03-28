@@ -17,6 +17,14 @@
     margin-bottom: 40px;
     top: -30px;
 
+    @include mediamaxwidth(1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        top: 10px;
+    }
+
     &__text {
         background-color: $primary-color;
         clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
@@ -30,6 +38,9 @@
         @include mediamaxwidth(1280px) {
                 height: 300px;
         }
+        @include mediamaxwidth(1024px) {
+            width: 90%;
+        }
 
         &__title {
             font-family: 'Montserrat';
@@ -37,10 +48,15 @@
             position: relative;
             top: 35px;
             left: 4%;
+            width: 100%;
 
             @include mediamaxwidth(1280px) {
                 font-size: 26px;
                 top: 20px;
+            }
+            @include mediamaxwidth(640px) {
+                top: -10px;
+                font-size: 18px;
             }
         }
 
@@ -49,12 +65,19 @@
             font-size: 25px;
             position: relative;
             left: 18%;
+            width: 90%;
 
             @include mediamaxwidth(1440px) {
                 left: 7%;
             }
             @include mediamaxwidth(1280px) {
                 font-size: 20px;
+            }
+            @include mediamaxwidth(640px) {
+                top: -20px;
+                left: 5%;
+                font-size: 15px;
+                width: 70%;
             }
         }
 
@@ -64,6 +87,7 @@
             position: relative;
             left: 35%;
             bottom: 10px;
+            width: 70%;
 
             @include mediamaxwidth(1440px) {
                 left: 20%;
@@ -71,6 +95,11 @@
             @include mediamaxwidth(1280px) {
                 font-size: 15px;
                 left: 16%;
+            }
+            @include mediamaxwidth(640px) {
+                top: -25px;
+                left: 6%;
+                font-size: 12px;
             }
         }
 
@@ -80,9 +109,14 @@
             position: relative;
             bottom: 20px;
             left: 15%;
+            width: 70%;
 
             @include mediamaxwidth(1280px) {
                 font-size: 15px;
+            }
+            @include mediamaxwidth(640px) {
+                top: -25px;
+                font-size: 12px;
             }
         }
 
@@ -92,9 +126,13 @@
             position: relative;
             bottom: 30px;
             left: 8%;
+            width: 70%;
 
             @include mediamaxwidth(1280px) {
                 font-size: 15px;
+            }
+            @include mediamaxwidth(640px) {
+                font-size: 12px;
             }
         }
     }
@@ -112,12 +150,24 @@
         @include mediamaxwidth(1280px) {
                 height: 300px;
         }
+        @include mediamaxwidth(1024px) {
+            position: relative;
+            width: 90%;
+        }
     }
 }
 
 .aboutb {
     position: relative;
     top: -30px;
+
+    @include mediamaxwidth(1024px) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        top: -10px;
+    }
 
     &__img {
         background-color: $primary-color;
@@ -132,6 +182,9 @@
 
         @include mediamaxwidth(1280px) {
             height: 300px;    
+        }
+        @include mediamaxwidth(1024px) {
+            width: 90%;
         }
     }
 
@@ -149,6 +202,10 @@
         @include mediamaxwidth(1280px) {
              height: 300px;   
         }
+        @include mediamaxwidth(1024px) {
+            position: relative;
+            width: 90%;
+        }
 
 
         &__title {
@@ -161,6 +218,12 @@
 
             @include mediamaxwidth(1280px) {
                 font-size: 21px;
+            }
+            @include mediamaxwidth(640px) {
+                font-size: 16px;
+                width: 70%;
+                left: 90px;
+                top: 20px;
             }
         }
 
@@ -178,6 +241,12 @@
             @include mediamaxwidth(1280px) {
                 font-size: 16px;
             }
+            @include mediamaxwidth(640px) {
+                font-size: 14px;
+                width: 80%;
+                left: 60px;
+                top: 30px;
+            }
         }
 
         &__txt2 {
@@ -190,6 +259,12 @@
             @include mediamaxwidth(1280px) {
                 font-size: 14px;
             }
+            @include mediamaxwidth(640px) {
+                font-size: 11px;
+                left: 10px;
+                width: 95%;
+                top: 40px;
+            }
         }
 
         &__txt3 {
@@ -201,6 +276,12 @@
 
             @include mediamaxwidth(1280px) {
                 font-size: 13px;
+            }
+            @include mediamaxwidth(640px) {
+                font-size: 10px;
+                top: 50px;
+                width: 95%;
+                left: 8px;
             }
         }
     }

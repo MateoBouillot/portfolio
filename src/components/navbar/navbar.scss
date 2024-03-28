@@ -11,6 +11,13 @@
     justify-content: space-between;
     border: 2px white solid;
     z-index: 6;
+    position: relative;
+
+    @include mediamaxwidth(640px) {
+        height: 70px;
+        justify-content: center;
+        align-items: flex-start;
+    }
 
     &__btn {
         margin-left: 5px;
@@ -19,6 +26,15 @@
         flex-direction: row;
         align-items: center;
         gap: 15px;
+
+        @include mediamaxwidth(1024px) {
+            gap: 10px;
+        }
+        @include mediamaxwidth(640px) {
+            position: absolute;
+            right: 52%;
+            top: 30px;
+        }
     
 
         &__txt {
@@ -26,6 +42,15 @@
             font-family: 'montserrat';
             font-size: 15px;
             font-weight: 500;
+            
+
+            @include mediamaxwidth(768px) {
+                font-size: 10px;
+            }
+            @include mediamaxwidth(640px) {
+                left: 33px;
+                position: relative;
+            }
         }
 
         &__back {
@@ -34,6 +59,11 @@
             border-radius: 10px;
             background-color: rgb(255, 254, 254);
             cursor: pointer;
+
+            @include mediamaxwidth(640px) {
+                position: relative;
+                left: 33px;
+            }
             
         }
 
@@ -49,6 +79,11 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+
+            @include mediamaxwidth(768px) {
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 
@@ -57,9 +92,20 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        
+        @include mediamaxwidth(768px) {
+            gap: 10px;
+        }
+        @include mediamaxwidth(640px) {
+            margin-top: 10px;
+        }
 
         &__logo {
             width: 60px;
+
+            @include mediamaxwidth(640px) {
+                width: 30px;
+            }
         }
 
         &__link {
@@ -70,6 +116,13 @@
             font-size: 18px;
             position: relative;
             bottom: 50px;
+
+            @include mediamaxwidth(768px) {
+                font-size: 15px;
+            }
+            @include mediamaxwidth(640px) {
+                font-size: 12px;
+            }
         }
     }
 }
@@ -79,6 +132,11 @@
     height: 13px;
     border-radius: 50px;
     background-color: rgb(42, 14, 75);
+
+    @include mediamaxwidth(768px) {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 .outbar {
@@ -91,4 +149,8 @@
     align-items: center;
     z-index: 6;
     width: 90%;
+
+    @include mediamaxwidth(640px) {
+        width: 100%;
+    }
 }

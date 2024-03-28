@@ -23,6 +23,10 @@
     0px 0px 80px rgba(0, 0, 0, 0.07);
     flex-direction: column;
 
+    @include mediamaxwidth(1024px) {
+        height: 500px;
+    }
+
     &__inputs {
         display: flex;
         flex-flow: column wrap;
@@ -31,6 +35,11 @@
         gap: 10%;
         row-gap: 10px;
 
+        @include mediamaxwidth(640px) {
+            flex-flow: column;
+            align-items: center;
+        }
+
         &__input {
             height: 40px;
             width: 40%;
@@ -38,6 +47,10 @@
             font-size: 15px;
             font-family: 'Open Sans';
             font-weight: 500;
+
+            @include mediamaxwidth(640px) {
+                width: 80%;
+            }
 
             &:focus {
                 outline: none;
@@ -72,6 +85,10 @@
             font-family: 'Open Sans';
             font-weight: 500;
 
+            @include mediamaxwidth(1024px) {
+                height: 150px;
+            }
+
             &:focus {
                 outline: none;
                 border: 3px solid $secondary-color;
@@ -95,6 +112,10 @@
         font-family: 'Montserrat';
         font-weight: 500;
         cursor: pointer;
+
+        @include mediamaxwidth(640px) {
+            width: 150px;
+        }
     }
 }
 

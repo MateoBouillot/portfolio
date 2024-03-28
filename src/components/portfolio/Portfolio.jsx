@@ -68,7 +68,7 @@ function Portfolio() {
                         turningPage == 'left' ? 
                             <><motion.div 
                                 animate={{ rotateY: 90 }}
-                                transition={{ duration: 1 }}
+                                transition={{ duration: 0.5 }}
                                 style={{ transformOrigin: 'right' }}
                             href='' className='website__left old'>
                                 <a href={ index == list.length-1? list[0].link : list[index+1].link } className='card' target='_blank' rel='noreferrer'>
@@ -92,7 +92,7 @@ function Portfolio() {
                             </div>
                             <motion.div 
                                 animate={{ rotateY: [0, -90, -90, -90, 0], opacity: [0, 0, 0, 1, 1] }}
-                                transition={{ duration: 2, times: [0, 0.3, 0.49, 0.5, 1] }}
+                                transition={{ duration: 1, times: [0, 0.3, 0.49, 0.5, 1] }}
                                 style={{ transformOrigin: 'left', zIndex: 5 }}
                             className='website__right new'>
                                 <h2 className='website__right__title'>{ language == 'fr'? 'Contexte' : 'Context' }</h2>
@@ -111,7 +111,7 @@ function Portfolio() {
                         </div>
                         <motion.div 
                             animate={{ rotateY: -90 }}
-                            transition={{ duration: 1 }}
+                            transition={{ duration: 0.5 }}
                             style={{ transformOrigin: 'left' }}
                         className='website__right old'>
                                 <h2 className='website__right__title'>{ language == 'fr'? 'Contexte' : 'Context' }</h2>
@@ -123,7 +123,7 @@ function Portfolio() {
                         </motion.div>
                         <motion.div 
                             animate={{ rotateY: [0, 90, 90, 90, 0], opacity: [0, 0, 0, 1, 1] }}
-                            transition={{ duration: 2, times: [0, 0.3, 0.49, 0.5, 1] }}
+                            transition={{ duration: 1, times: [0, 0.3, 0.49, 0.5, 1] }}
                             style={{ transformOrigin: 'right', zIndex: 5 }}
                         href='' className='website__left new'>
                             <a href={list[index].link} className='card' target='_blank' rel='noreferrer'>
