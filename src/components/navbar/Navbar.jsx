@@ -8,17 +8,17 @@ import { useState } from 'react'
 function Navbar() {
     const { language } = useSelector((state) => state.lang)
     const dispatch = useDispatch()
-    const [btnPos, setBtnPos] = useState(45)
+    const [btnPos, setBtnPos] = useState(25)
 
 
 
     const handleClick = () => {
         if (language === 'fr') {
             dispatch(english())
-            setBtnPos(65)
+            setBtnPos(45)
         } else {
             dispatch(francais())
-            setBtnPos(45)
+            setBtnPos(25)
         }
     }
 
