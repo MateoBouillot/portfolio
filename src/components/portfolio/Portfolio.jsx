@@ -144,6 +144,7 @@ function Portfolio() {
                     </div>
                 <div className='bg__inner__right' onClick={handleClickRight}><FontAwesomeIcon icon={faCaretRight} size='2xl' /></div>
             </div>
+            <div id='skillsLink'></div>
         </div>
     </>
 }

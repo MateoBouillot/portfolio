@@ -8,6 +8,7 @@ import './homepage.scss'
 function Homepage() {
 
     return <>
+        <div id='aboutLink'></div>
         <Navbar />
         <Apropos />
         <Portfolio />

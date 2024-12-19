@@ -7,6 +7,8 @@ import javascript from '../../assets/javascript.png'
 import react from '../../assets/react.png'
 import sass from '../../assets/sass.png'
 import redux from '../../assets/redux.png'
+import projetweb from '../../assets/Projet-web.pdf'
+import projetgamedev from '../../assets/Projet-game-dev.pdf'
 import { frBottomRightTxt, frTopLeftTxt, enBottomRightTxt, enTopLeftTxt } from '../../assets/texts'
 import { useSelector } from 'react-redux'
 
@@ -19,12 +21,44 @@ function Apropos() {
     let topLeftTxt = language == 'fr'? frTopLeftTxt : enTopLeftTxt
 
     return <section id='about' >
+        <a 
+            href={projetweb}    
+            className="hidden-pdf" 
+            aria-hidden="true" 
+            tabIndex="-1"
+            style={{ 
+                position: 'absolute', 
+                width: '1px', 
+                height: '1px', 
+                padding: '0', 
+                margin: '-1px', 
+                overflow: 'hidden', 
+                clip: 'rect(0,0,0,0)', 
+                border: '0' 
+            }}
+        >Hidden PDF</a>
+        <a 
+            href={projetgamedev}    
+            className="hidden-pdf" 
+            aria-hidden="true" 
+            tabIndex="-1"
+            style={{ 
+                position: 'absolute', 
+                width: '1px', 
+                height: '1px', 
+                padding: '0', 
+                margin: '-1px', 
+                overflow: 'hidden', 
+                clip: 'rect(0,0,0,0)', 
+                border: '0' 
+            }}
+        >Hidden PDF</a>
         <article className='about' >
             <motion.div className='about__text'
                 animate={{ clipPath: ['polygon(0 0, 0 0, 0 100%, 0% 100%)', 'polygon(0 0, 70% 0, 70% 100%, 0 100%)', 'polygon(0 0, 70% 0, 100% 100%, 0% 100%)'] }}
                 transition={{ duration: 1, times: [0, 0.8, 1] }}
             > 
-                <div className='test'>
+                <div className='about__text__texts'>
                     <h1 className='about__text__title'>{topLeftTxt.title1}<br/>{topLeftTxt.title2}</h1>
                     <h2 className='about__text__subtitle' >{topLeftTxt.subtitle1}<br/>{topLeftTxt.subtitle2}</h2>
                     <p className='about__text__txt1'>{topLeftTxt.txt1}</p>

@@ -18,7 +18,7 @@ function Radarchart() {
         scale: 1.15,
     }
 
-    return <div className='outerSkills' id='skills' >
+    return <div className='outerSkills'>
         <div className='language'>
             <h2 className='language__title'>Languages</h2>
             <motion.div className='Skill language__html' whileHover={hover}>

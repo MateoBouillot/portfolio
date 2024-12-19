@@ -23,7 +23,7 @@ function Navbar() {
     }
 
     return <div className='outbar'>
-    <nav className="topbar">
+    <nav className='topbar' id='topbar'>
         <div className='topbar__btn' onClick={handleClick}>
             <p className='topbar__btn__txt'>fr</p>
             <div className='topbar__btn__back'></div>
@@ -35,7 +35,7 @@ function Navbar() {
             <p className='topbar__btn__txt'>en</p>
         </div>
         <div className='topbar__links' >
-            <motion.a href='#about' className='topbar__links__link'
+            <motion.a href='#aboutLink' className='topbar__links__link'
                 animate={{y:50}} transition={{ type:"spring", bounce:0.7, delay:0.05 }}
             >{language == 'fr'? 'À-propos' : 'About' }</motion.a>
             <motion.a href='#portfolio' className='topbar__links__link'
@@ -44,7 +44,7 @@ function Navbar() {
             <motion.img src={logo} alt='Logo' className='topbar__links__logo' 
                 animate={{ rotateZ:[0, 720], scale:[0, 1] }} transition={{ duration:0.5 }}
             />
-            <motion.a href='#skills' className='topbar__links__link'
+            <motion.a href='#skillsLink' className='topbar__links__link'
                 animate={{y:50}} transition={{ type:"spring", bounce:0.6, delay:0.15 }}
             >{ language == 'fr'? 'Compétences' : 'Skills' }</motion.a>
             <motion.a href='#contact' className='topbar__links__link'
