@@ -5,8 +5,8 @@ import html from '../../assets/html.png'
 import javascript from '../../assets/javascript.png'
 import react from '../../assets/react.png'
 import sass from '../../assets/sass.png'
-import redux from '../../assets/redux.png'
-import framer from '../../assets/framer.svg'
+import Lua from '../../assets/Lua.png'
+import CSharp from '../../assets/CSharp.png'
 import { motion } from 'framer-motion'
 
 
@@ -20,7 +20,7 @@ function Radarchart() {
 
     return <div className='outerSkills'>
         <div className='language'>
-            <h2 className='language__title'>Languages</h2>
+            <h2 className='language__title'>Web</h2>
             <motion.div className='Skill language__html' whileHover={hover}>
                 <img src={html} alt='html logo' className='Skill__logo' />
             </motion.div>
@@ -42,13 +42,13 @@ function Radarchart() {
             </motion.div>
         </div>
         <div className='otherSkills'>
-            <h2 className='otherSkills__title'>{language == 'fr'? 'Bibliothèques React' : 'React libraries' }</h2>
+            <h2 className='otherSkills__title'>{language == 'fr'? 'Jeux vidéo' : 'Game' }</h2>
             <div className='block'>
-                <motion.div className='Skill block__redux' whileHover={hover}>
-                    <img src={redux} alt='redux logo' className='Skill__logo' />
+                <motion.div className='Skill block__Lua' whileHover={hover}>
+                    <img src={Lua} alt='Lua logo' className='Skill__logo' />
                 </motion.div>
-                <motion.div className='Skill block__framermotion' whileHover={hover}>
-                    <img src={framer} alt='framer logo' className='Skill__logo' />
+                <motion.div className='Skill block__CSharp' whileHover={hover}>
+                    <img src={CSharp} alt='CSharp logo' className='Skill__logo' />
                 </motion.div>
             </div>
             <h2 className='otherSkills__title'>{language == 'fr'? 'Autres Compétences' : 'Other skills' }</h2>

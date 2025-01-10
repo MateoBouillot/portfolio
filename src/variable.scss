@@ -7,7 +7,13 @@ $secondary-color: rgb(79, 26, 138);
     }
 }
 
-//  768 640
+@mixin mediaminwidth($min) {
+    @media screen and (min-width: $min) {
+        @content;
+    }
+}
+
+//  428 => 320px
 
 
 

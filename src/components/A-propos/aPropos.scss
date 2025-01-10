@@ -12,7 +12,7 @@
     }
 }
 
-.about {
+.aboutTop {
     position: relative;
     margin-bottom: 40px;
     top: -30px;
@@ -25,9 +25,7 @@
         top: 10px;
     }
 
-   
-
-    &__text {
+    &__textLeft {
         background-color: $primary-color;
         clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
         width: 58%;
@@ -45,24 +43,20 @@
         }
 
         &__texts {
-                position: relative;
+            position: relative;
 
-                @include mediamaxwidth(1280px) {
-                    top: 5%;
-                }   
-                
-                @include mediamaxwidth(1024px) {
-                    top: -6%;
-                }
-
-                @include mediamaxwidth(640px) {
-                    top: 13%;
-                }
-
-                @include mediamaxwidth(525px) {
-                    top: 0%;
-                }
+            @include mediamaxwidth(1280px) {
+                top: 5%;
+            }   
+            
+            @include mediamaxwidth(1024px) {
+                top: 4%;
             }
+
+            @include mediamaxwidth(640px) {
+                top: 18%;
+            }
+        }
 
         &__title {
             font-family: 'Montserrat';
@@ -71,6 +65,7 @@
             top: 35px;
             left: 4%;
             width: 100%;
+            margin: 0;
 
             @include mediamaxwidth(1280px) {
                 font-size: 26px;
@@ -80,26 +75,79 @@
                 top: -10px;
                 font-size: 18px;
             }
+            @include mediamaxwidth(428px) {
+                font-size: 15px;
+            }
+        }
+
+        &__title2 {
+            font-family: 'Montserrat';
+            font-size: 34px;
+            position: relative;
+            left: 8%;
+            width: 100%;
+            top: 35px;
+            margin: 0;
+
+            @include mediamaxwidth(1280px) {
+                font-size: 26px;
+                top: 20px;
+            }
+            @include mediamaxwidth(640px) {
+                top: -10px;
+                font-size: 18px;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 15px;   
+            }
+        }
+
+        &__title3 {
+            font-family: 'Montserrat';
+            font-size: 34px;
+            position: relative;
+            left: 15%;
+            width: 100%;
+            top: 35px;
+            margin: 0;
+
+            @include mediamaxwidth(1280px) {
+                font-size: 26px;
+                top: 20px;
+            }
+            @include mediamaxwidth(640px) {
+                top: -10px;
+                font-size: 18px;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 15px;   
+            }
         }
 
         &__subtitle {
             font-family: 'Open sans';
             font-size: 25px;
             position: relative;
+            top: 10px;
             left: 16%;
             width: 90%;
 
             @include mediamaxwidth(1440px) {
-                left: 7%;
+                left: 10%;
             }
             @include mediamaxwidth(1280px) {
                 font-size: 20px;
+                left: 5%;
+                top: 5px;
             }
             @include mediamaxwidth(640px) {
                 top: -20px;
                 left: 5%;
                 font-size: 15px;
                 width: 70%;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 12px;   
             }
         }
 
@@ -116,12 +164,17 @@
             }
             @include mediamaxwidth(1280px) {
                 font-size: 15px;
-                left: 16%;
+                width: fit-content;
+                left: 14%;
             }
             @include mediamaxwidth(640px) {
                 top: -25px;
-                left: 6%;
-                font-size: 12px;
+                left: 4%;
+                font-size: 11px;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 9px;  
+                width: 70%; 
             }
         }
 
@@ -135,51 +188,166 @@
 
             @include mediamaxwidth(1280px) {
                 font-size: 15px;
+                width: fit-content;
+                left: 12%;
             }
             @include mediamaxwidth(640px) {
                 top: -25px;
-                font-size: 12px;
+                left: 5%;
+                font-size: 11px;
             }
-        }
-
-        &__txt3 {
-            font-family: 'Open sans';
-            font-size: 18px;
-            position: relative;
-            bottom: 30px;
-            left: 8%;
-            width: 70%;
-
-            @include mediamaxwidth(1280px) {
-                font-size: 15px;
-            }
-            @include mediamaxwidth(640px) {
-                font-size: 12px;
+            @include mediamaxwidth(428px) {
+                font-size: 9px;
+                width: 70%;
             }
         }
     }
 
-    &__img {
-        background-image: url('../../assets/matrice.jpg');
+    &__textRight {
         clip-path: polygon(0% 0, 100% 0, 100% 100%, 30% 100%);
+        background-color: $primary-color;
         width: 56%;
         position: absolute;
         height: 350px;
         top: 0px;
         right: 5px;
         border-radius: 10px;
+        color: white;
 
         @include mediamaxwidth(1280px) {
-                height: 300px;
+            height: 300px;   
         }
         @include mediamaxwidth(1024px) {
+           position: relative;
+           width: 90%;
+        }
+
+        &__texts {
             position: relative;
-            width: 90%;
+
+            @include mediamaxwidth(1440px) {
+                top: 4%;
+            }
+            @include mediamaxwidth(1280px) {
+                top: 5%;
+            }   
+            
+            @include mediamaxwidth(1024px) {
+                top: 4%;
+            }
+
+            @include mediamaxwidth(640px) {
+                top: -2%;
+            }
+            @include mediamaxwidth(428px) {
+                top: 3%;   
+            }
+
+        }
+
+        &__title {
+            font-family: 'Open sans';
+            font-size: 25px;
+            position: relative;
+            right: 5%;
+            text-align: end;
+            margin: 10px;
+
+            @include mediamaxwidth(1280px) {
+                font-size: 21px;
+            }
+            @include mediamaxwidth(640px) {
+                font-size: 16px;
+                width: 70%;
+                left: 90px;
+                top: 20px;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 14px;   
+                left: -8%;
+                width: 100%;
+            }
+        }
+
+        &__subtitle {
+            font-family: 'Open sans';
+            font-size: 21px;
+            position: relative;
+            right: 15%;
+            text-align: end;
+            margin: 10px;
+
+            @include mediamaxwidth(1440px) {
+                right: 9%;
+            }
+            @include mediamaxwidth(1280px) {
+                font-size: 16px;
+            }
+            @include mediamaxwidth(640px) {
+                font-size: 14px;
+                width: 80%;
+                left: 60px;
+                top: 30px;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 11px;
+                width: 90%;
+                left: 3%;
+            }
+        }
+
+        &__txt2 {
+            font-family: 'Open sans';
+            font-size: 16px;
+            position: relative;
+            right: 10%;
+            text-align: end;
+
+            @include mediamaxwidth(1440px) {
+                font-size: 15px;
+            }
+            @include mediamaxwidth(1280px) {
+                font-size: 13px;
+            }
+            @include mediamaxwidth(640px) {
+                font-size: 9.5px;
+                left: 10px;
+                width: 95%;
+                top: 40px;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 7px;   
+            }
+        }
+
+        &__txt3 {
+            font-family: 'Open sans';
+            font-size: 16px;
+            position: relative;
+            right: 2%;
+            text-align: end;
+
+            @include mediamaxwidth(1440px) {
+                font-size: 15px;
+                right: 0.5%;
+            }
+            @include mediamaxwidth(1280px) {
+                font-size: 11px;
+            }
+            @include mediamaxwidth(640px) {
+                font-size: 8px;
+                top: 50px;
+                width: 68%;
+                left: 28%;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 7px;   
+            }
         }
     }
 }
 
-.aboutb {
+.aboutBottom {
     position: relative;
     top: -30px;
 
@@ -210,7 +378,7 @@
         }
     }
 
-    &__text {
+    &__textRight {
         background-color: $primary-color;
         clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
         width: 56%;
@@ -230,6 +398,29 @@
         }
 
 
+        &__texts {
+            position: relative;
+
+            @include mediamaxwidth(1440px) {
+                top: 6%;
+            }
+            @include mediamaxwidth(1280px) {
+                top: 5%;
+            }   
+            
+            @include mediamaxwidth(1024px) {
+                top: 4%;
+            }
+
+            @include mediamaxwidth(640px) {
+                top: -2%;
+            }
+
+            @include mediamaxwidth(428px) {
+                top: 3%;
+            }
+        }
+        
         &__title {
             font-family: 'Open sans';
             font-size: 25px;
@@ -237,40 +428,79 @@
             right: 5%;
             text-align: end;
             margin: 10px;
-
+            
+            @include mediamaxwidth(1440px) {
+                font-size: 23px;
+                right: 2%;
+            }
             @include mediamaxwidth(1280px) {
-                font-size: 21px;
+                font-size: 19px;
+                right: 1%;
             }
             @include mediamaxwidth(640px) {
-                font-size: 16px;
+                font-size: 15px;
                 width: 70%;
-                left: 90px;
+                left: 25%;
                 top: 20px;
             }
+            @include mediamaxwidth(428px) {
+                font-size: 14px;   
+            }
         }
-
+        
         &__subtitle {
             font-family: 'Open sans';
-            font-size: 21px;
+            font-size: 17px;
+            position: relative;
+            right: 10%;
+            text-align: end;
+
+            @include mediamaxwidth(1440px) {
+                font-size: 16px;
+            }
+            @include mediamaxwidth(1280px) {
+                font-size: 14px;
+                right: 4%;
+            }
+            @include mediamaxwidth(640px) {
+                font-size: 11px;
+                left: 10px;
+                width: 95%;
+                top: 20px;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 9px;   
+                width: 85%;
+                left:13%;
+            }
+        }
+        
+        &__txt1 {
+            font-family: 'Open sans';
+            font-size: 17px;
             position: relative;
             right: 15%;
             text-align: end;
-            margin: 10px;
 
             @include mediamaxwidth(1440px) {
-                right: 9%;
+                font-size: 15px;
+                right: 13%;
             }
             @include mediamaxwidth(1280px) {
-                font-size: 16px;
+                font-size: 13px;
+                right: 7%;
             }
             @include mediamaxwidth(640px) {
-                font-size: 14px;
-                width: 80%;
-                left: 60px;
-                top: 30px;
+                font-size: 9px;
+                top: 20px;
+                width: 90%;
+                left: 8%;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 7px;   
             }
         }
-
+        
         &__txt2 {
             font-family: 'Open sans';
             font-size: 17px;
@@ -278,14 +508,22 @@
             right: 10%;
             text-align: end;
 
+            @include mediamaxwidth(1440px) {
+                font-size: 15px;
+                right: 8%;
+            }
             @include mediamaxwidth(1280px) {
-                font-size: 14px;
+                font-size: 13px;
+                right: 3%;
             }
             @include mediamaxwidth(640px) {
-                font-size: 11px;
-                left: 10px;
-                width: 95%;
-                top: 40px;
+                font-size: 9px;
+                left: 7%;
+                width: 90%;
+                top: 20px;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 7px;   
             }
         }
 
@@ -293,24 +531,43 @@
             font-family: 'Open sans';
             font-size: 17px;
             position: relative;
-            right: 2%;
+            right: 3%;
             text-align: end;
 
+            @include mediamaxwidth(1440px) {
+                font-size: 15px;
+                right: 1%;
+            }
             @include mediamaxwidth(1280px) {
-                font-size: 13px;
+                font-size: 12px;
             }
             @include mediamaxwidth(640px) {
-                font-size: 10px;
-                top: 50px;
+                font-size: 9px;
+                left: 10px;
                 width: 95%;
-                left: 8px;
+                top: 20px;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 7px;
+                width: 80%;
+                left: 18%;
             }
         }
+
+        @include mediamaxwidth(1280px) {
+            height: 300px;
+        }
+        @include mediamaxwidth(1024px) {
+            position: relative;
+            width: 90%;
+        }
+
+
     }
 }
 
 .atome {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -318,53 +575,61 @@
     position: relative;
     right: 5%;
 
-    &__openclassrooms {
-        position: absolute;
-        top: 40%;
-        left: 40%;
+    @include mediamaxwidth(640px) {
+        height: 70%;
+        width: 70%;
+        top: 15%;
+    }
+
+    @include mediaminwidth(2000px) {
+        width: 27%;
     }
 
     &__css {
         position: absolute;
-        top: 16%;
-        left: 63%;
+        top: 19%;
+        left: 73%;
         
     }
 
     &__html {
         position: absolute;
-        top: 63%;
+        top: 61%;
         left: 17%;
     }
 
     &__javascript {
         position: absolute;
-        top: 19%;
+        top: 21%;
         left: 17%;
     }
 
     &__react {
         position: absolute;
         top: 5%;
-        left: 40%;
+        left: 45%;
     }
 
-    &__sass {
+    &__CSharp {
         position: absolute;
-        top: 63%;
-        left: 63%;
+        top: 60%;
+        left: 71%;
     }
 
-    &__redux {
+    &__lua {
         position: absolute;
         top: 79%;
-        left: 40%;
+        left: 43%;
     }
 }
 
 .logo {
     width: 50px;
     height: auto;
+
+    @include mediamaxwidth(640px) {
+        width: 30px;
+    }
 }
 
 .first {

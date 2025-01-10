@@ -123,6 +123,9 @@
                 font-size: 14px;
                 margin: 0px;
             }
+            @include mediamaxwidth(428px) {
+                font-size: 10px;   
+            }
         }
 
         &__txt {
@@ -140,6 +143,9 @@
             }
             @include mediamaxwidth(640px) {
                 font-size: 9px;
+            }
+            @include mediamaxwidth(428px) {
+                font-size: 8px;   
             }
         }
     }
@@ -174,6 +180,9 @@
     @include mediamaxwidth(640px) {
         height: 140px;
     }
+    @include mediamaxwidth(428px) {
+        height: 100px;           
+    }
 
     &__img {
         width: 100%;
@@ -201,6 +210,9 @@
         }
         @include mediamaxwidth(640px) {
             font-size: 10px;
+        }
+        @include mediamaxwidth(428px) {
+            font-size: 8px;       
         }
     }
 

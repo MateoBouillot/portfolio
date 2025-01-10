@@ -1,15 +1,14 @@
 import './aPropos.scss'
 import { motion } from "framer-motion"
-import OC from '../../assets/OpenClassroom.png'
 import css from '../../assets/css.png'
 import html from '../../assets/html.png'
 import javascript from '../../assets/javascript.png'
 import react from '../../assets/react.png'
-import sass from '../../assets/sass.png'
-import redux from '../../assets/redux.png'
+import CSharp from '../../assets/CSharp.png'
+import Lua from '../../assets/Lua.png'
 import projetweb from '../../assets/Projet-web.pdf'
 import projetgamedev from '../../assets/Projet-game-dev.pdf'
-import { frBottomRightTxt, frTopLeftTxt, enBottomRightTxt, enTopLeftTxt } from '../../assets/texts'
+import { frTopRightTxt, frTopLeftTxt, enTopRightTxt, enTopLeftTxt, frBottomRightTxt, enBottomRightTxt } from '../../assets/texts'
 import { useSelector } from 'react-redux'
 
 
@@ -17,6 +16,7 @@ import { useSelector } from 'react-redux'
 function Apropos() {
 
     const { language } = useSelector((state) => state.lang)
+    let topRightTxt = language == 'fr'? frTopRightTxt : enTopRightTxt
     let bottomRightTxt = language == 'fr'? frBottomRightTxt : enBottomRightTxt
     let topLeftTxt = language == 'fr'? frTopLeftTxt : enTopLeftTxt
 
@@ -53,89 +53,92 @@ function Apropos() {
                 border: '0' 
             }}
         >Hidden PDF</a>
-        <article className='about' >
-            <motion.div className='about__text'
+        <article className='aboutTop' >
+            <motion.div className='aboutTop__textLeft'
                 animate={{ clipPath: ['polygon(0 0, 0 0, 0 100%, 0% 100%)', 'polygon(0 0, 70% 0, 70% 100%, 0 100%)', 'polygon(0 0, 70% 0, 100% 100%, 0% 100%)'] }}
                 transition={{ duration: 1, times: [0, 0.8, 1] }}
             > 
-                <div className='about__text__texts'>
-                    <h1 className='about__text__title'>{topLeftTxt.title1}<br/>{topLeftTxt.title2}</h1>
-                    <h2 className='about__text__subtitle' >{topLeftTxt.subtitle1}<br/>{topLeftTxt.subtitle2}</h2>
-                    <p className='about__text__txt1'>{topLeftTxt.txt1}</p>
-                    <p className='about__text__txt2'>{topLeftTxt.txt21}<br/>{topLeftTxt.txt22}</p>
-                    <p className='about__text__txt3'>{topLeftTxt.txt3}</p>
+                <div className='aboutTop__textLeft__texts'>
+                    <h1 className='aboutTop__textLeft__title'>{topLeftTxt.title1}</h1>
+                    <h2 className='aboutTop__textLeft__title2'>{topLeftTxt.title2}</h2>
+                    <h2 className='aboutTop__textLeft__title3'>{topLeftTxt.title3}</h2>
+                    <h3 className='aboutTop__textLeft__subtitle'>{topLeftTxt.subtitle1}<br/>{topLeftTxt.subtitle2}</h3>
+                    <p className='aboutTop__textLeft__txt1'>{topLeftTxt.txt1}</p>
+                    <p className='aboutTop__textLeft__txt2'>{topLeftTxt.txt21}<br/>{topLeftTxt.txt22}</p>
                 </div>
             </motion.div>
-            <motion.div className='about__img'
+            <motion.div className='aboutTop__textRight'
                 animate={{ clipPath: ['polygon(100% 0, 100% 0, 100% 100%, 100% 100%)', 'polygon(30% 0, 100% 0, 100% 100%, 30% 100%)', 'polygon(0 0, 100% 0, 100% 100%, 30% 100%)'] }}
                 transition={{ duration: 1, times: [0, 0.8, 1] }}
             >
+                <div className='aboutTop__textRight__texts'>
+                    <h2 className='aboutTop__textRight__title'>{topRightTxt.title1}<br/>{topRightTxt.title2}</h2>
+                    <h3 className='aboutTop__textRight__subtitle'>{topRightTxt.subtitle1}<br/>{topRightTxt.subtitle2}</h3>
+                    <p className='aboutTop__textRight__txt2'>{topRightTxt.txt21}<br/>{topRightTxt.txt22}<br/>{topRightTxt.txt23}</p>
+                    <p className='aboutTop__textRight__txt3'>{topRightTxt.txt31}<br/>{topRightTxt.txt32}<br/>{topRightTxt.txt33}</p>
+                </div>
             </motion.div>
         </article>
-        <article className='aboutb'>
-            <motion.div className='aboutb__img'
+        <article className='aboutBottom'>
+            <motion.div className='aboutBottom__img'
                 animate={{ clipPath: ['polygon(0 0, 0 0, 0 100%, 0% 100%)', 'polygon(0 0, 70% 0, 70% 100%, 0 100%)', 'polygon(0 0, 100% 0, 70% 100%, 0% 100%)'] }}
                 transition={{ duration: 1, times: [0, 0.8, 1] }}
             >
                 <motion.div 
-                    animate={{ rotate: 360, y: [0, -10, 0, 10, 0], x: [0, -10, 10, -10, 0]  }}
+                    animate={{ rotate: 360}}
                     transition={{ duration: 6, times: [0, 0.2, 0.5, 0.8, 1], ease: 'linear', repeat: Infinity, delay: 1 }}
-                    style={{ originX: 0.42, originY: 0.48 }}
-                className='atome'>
-                    <div className='test' ></div>
-                    <motion.div className='atome__openclassrooms '
+                    style={{ originX: 0.5, originY: 0.5 }}
+                    className='atome'>
+                    <div className='test'></div>
+                    <motion.div className='atome__css'
                         animate={{ rotate: -360 }}
                         transition={{ duration: 6, ease: 'linear', repeat: Infinity, delay: 1 }}>
-                        <img className='logo first' src={OC} alt='logo openclassrooms' />
-                    </motion.div>
-                    <motion.div className='atome__css '
-                        animate={{ rotate: -360 }}
-                        transition={{ duration: 6,  ease: 'linear', repeat: Infinity, delay: 1 }}>
-                        <img className=' logo second' src={css} alt='logo css' />
+                        <img className='logo second' src={css} alt='logo css' />
                     </motion.div>
                     
-                    <motion.div className='atome__html '
+                    <motion.div className='atome__html'
                         animate={{ rotate: -360 }}
                         transition={{ duration: 6, ease: 'linear', repeat: Infinity, delay: 1 }}>
-                        <img className=' logo third' src={html} alt='logo html' />
+                        <img className='logo third' src={html} alt='logo html' />
                     </motion.div>
                     
-                    <motion.div className='atome__javascript '
+                    <motion.div className='atome__javascript'
                         animate={{ rotate: -360 }}
                         transition={{ duration: 6, ease: 'linear', repeat: Infinity, delay: 1 }}>
-                        <img  className=' logo fourth' src={javascript} alt='logo javascript' />
+                        <img  className='logo fourth' src={javascript} alt='logo javascript' />
                     </motion.div>
                    
-                    <motion.div className='atome__react '
+                    <motion.div className='atome__react'
                          animate={{ rotate: -360 }}
                          transition={{ duration: 6, ease: 'linear', repeat: Infinity, delay: 1 }}>
-                        <img className=' logo sixth' src={react} alt='logo react' />
+                        <img className='logo sixth' src={react} alt='logo react' />
                     </motion.div>
                     
-                    <motion.div className='atome__sass '
+                    <motion.div className='atome__CSharp'
                         animate={{ rotate: -360 }}
                         transition={{ duration: 6, ease: 'linear', repeat: Infinity, delay: 1 }}>
-                        <img className=' logo fifth' src={sass} alt='logo sass' />
+                        <img className='logo fifth' src={CSharp} alt='logo CSharp' />
                     </motion.div>
                     
-                    <motion.div className='atome__redux '
+                    <motion.div className='atome__lua'
                         animate={{ rotate: -360 }}
                         transition={{ duration: 6, ease: 'linear', repeat: Infinity, delay: 1 }}>
-                        <img className=' logo seventh' src={redux} alt='logo redux' />
+                        <img className='logo seventh' src={Lua} alt='logo lua' />
                     </motion.div>
                     
                 </motion.div>
             </motion.div>
-            <motion.div className='aboutb__text'
+            <motion.div className='aboutBottom__textRight'
                 animate={{ clipPath: ['polygon(100% 0, 100% 0, 100% 100%, 100% 100%)', 'polygon(30% 0, 100% 0, 100% 100%, 30% 100%)', 'polygon(30% 0, 100% 0, 100% 100%, 0% 100%)'] }}
                 transition={{ duration: 1, times: [0, 0.8, 1] }}
             >
-
-                    <h2 className='aboutb__text__title'>{bottomRightTxt.title1}<br/>{bottomRightTxt.title2}</h2>
-                    <h3 className='aboutb__text__subtitle'>{bottomRightTxt.subtitle1}<br/>{bottomRightTxt.subtitle2}</h3>
-                    <p className='aboutb__text__txt2'>{bottomRightTxt.txt21}<br/>{bottomRightTxt.txt22}<br/>{bottomRightTxt.txt23}</p>
-                    <p className='aboutb__text__txt3'>{bottomRightTxt.txt31}<br/>{bottomRightTxt.txt32}<br/>{bottomRightTxt.txt33}</p>
-
+                <div className='aboutBottom__textRight__texts'>
+                    <h2 className='aboutBottom__textRight__title'>{bottomRightTxt.title1}<br/>{bottomRightTxt.title2}</h2>
+                    <h3 className='aboutBottom__textRight__subtitle'>{bottomRightTxt.subtitle1}<br/>{bottomRightTxt.subtitle2}</h3>
+                    <p className='aboutBottom__textRight__txt1'>{bottomRightTxt.txt11}<br/>{bottomRightTxt.txt12}</p>
+                    <p className='aboutBottom__textRight__txt2'>{bottomRightTxt.txt21}<br/>{bottomRightTxt.txt22}</p>
+                    <p className='aboutBottom__textRight__txt3'>{bottomRightTxt.txt3}</p>
+                </div>
             </motion.div>
         </article>
     </section>
