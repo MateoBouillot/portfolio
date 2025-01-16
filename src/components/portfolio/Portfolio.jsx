@@ -79,9 +79,9 @@ function Portfolio() {
                             <div className='website__right old'>
                                 <h2 className='website__right__title'>{ language == 'fr'? 'Contexte' : 'Context' }</h2>
                                 <p className='website__right__txt'>{index == list.length-1? portfoliotxt[0].contexte : portfoliotxt[index+1].contexte}</p>
-                                <h2 className='website__right__title'>{ language == 'fr'? 'Compétences utilisé' : 'Skills used' }</h2>
+                                <h2 className='website__right__title'>{ language == 'fr'? 'Compétences utilisées' : 'Skills used' }</h2>
                                 <p className='website__right__txt'>{index == list.length-1? portfoliotxt[0].compétences : portfoliotxt[index+1].compétences}</p>
-                                <h2 className='website__right__title'>{ language == 'fr'? 'Experience tiré' : 'Experience gained' }</h2>
+                                <h2 className='website__right__title'>{ language == 'fr'? 'Experience tirée' : 'Experience gained' }</h2>
                                 <p className='website__right__txt'>{index == list.length-1? portfoliotxt[0].experience : portfoliotxt[index+1].experience}</p>                         
                             </div>
                             <div href='' className='website__left new'>
@@ -97,9 +97,9 @@ function Portfolio() {
                             className='website__right new'>
                                 <h2 className='website__right__title'>{ language == 'fr'? 'Contexte' : 'Context' }</h2>
                                 <p className='website__right__txt'>{portfoliotxt[index].contexte}</p>
-                                <h2 className='website__right__title'>{ language == 'fr'? 'Compétences utilisé' : 'Skills used' }</h2>
+                                <h2 className='website__right__title'>{ language == 'fr'? 'Compétences utilisées' : 'Skills used' }</h2>
                                 <p className='website__right__txt'>{portfoliotxt[index].compétences}</p>
-                                <h2 className='website__right__title'>{ language == 'fr'? 'Experience tiré' : 'Experience gained' }</h2>
+                                <h2 className='website__right__title'>{ language == 'fr'? 'Expérience tirée' : 'Experience gained' }</h2>
                                 <p className='website__right__txt'>{portfoliotxt[index].experience}</p>                            
                             </motion.div></>:
                         turningPage == 'right' ? 
@@ -116,9 +116,9 @@ function Portfolio() {
                         className='website__right old'>
                                 <h2 className='website__right__title'>{ language == 'fr'? 'Contexte' : 'Context' }</h2>
                                 <p className='website__right__txt'>{index == 0? portfoliotxt[list.length-1].contexte : portfoliotxt[index-1].contexte}</p>
-                                <h2 className='website__right__title'>{ language == 'fr'? 'Compétences utilisé' : 'Skills used' }</h2>
+                                <h2 className='website__right__title'>{ language == 'fr'? 'Compétences utilisées' : 'Skills used' }</h2>
                                 <p className='website__right__txt'>{index == 0? portfoliotxt[list.length-1].compétences : portfoliotxt[index-1].compétences}</p>
-                                <h2 className='website__right__title'>{ language == 'fr'? 'Experience tiré' : 'Experience gained' }</h2>
+                                <h2 className='website__right__title'>{ language == 'fr'? 'Expérience tirée' : 'Experience gained' }</h2>
                                 <p className='website__right__txt'>{index == 0? portfoliotxt[list.length-1].experience : portfoliotxt[index-1].experience}</p>                       
                         </motion.div>
                         <motion.div 
@@ -136,7 +136,7 @@ function Portfolio() {
                             <p className='website__right__txt'>{portfoliotxt[index].contexte}</p>
                             <h2 className='website__right__title'>{ language == 'fr'? 'Compétences utilisé' : 'Skills used' }</h2>
                             <p className='website__right__txt'>{portfoliotxt[index].compétences}</p>
-                            <h2 className='website__right__title'>{ language == 'fr'? 'Experience tiré' : 'Experience gained' }</h2>
+                            <h2 className='website__right__title'>{ language == 'fr'? 'Expérience tiré' : 'Experience gained' }</h2>
                             <p className='website__right__txt'>{portfoliotxt[index].experience}</p>             
                         </div></>
                         : <p>cassé</p>

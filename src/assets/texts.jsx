@@ -23,49 +23,49 @@ export const frportfoliotxt = [
     {
         desc: `Oh my food, site web pour restaurateur, à la manière d'uber eats`,
         contexte: 'Projet Open Classrooms',
-        compétences: 'Ce projet à été réalisé en HTML et scss',
-        experience: `Grâce à ce projet j'ai pu apprendre à utiliser les animations en keyframe du CSS et le scss`
+        compétences: 'Ce projet à été réalisé en HTML et scss.',
+        experience: `Grâce à ce projet j'ai pu apprendre à utiliser les animations en keyframe du CSS et le scss.`
     },
     {
         desc: 'Kasa, site de location immobilière entre particulier',
         contexte: 'Projet Open Classrooms',
         compétences: 'Ce projet à été réalisé sous React.js.',
-        experience: `Ce projet à été mon introduction a React, J'ai pu découvrir la variété de composants que l'on peut créer et aprendre a bien mettre en place ces composants`
+        experience: `Ce projet a été mon introduction à React, j’ai pu découvrir la variété de composants que l’on peut créer et apprendre à bien mettre en place ces composants.`
     },
     {
         desc: `Booki, site de location et d'activité vacancière`,
         contexte: `Projet Open Classrooms`,
-        compétences: `Ce projet à été réalisé en HTML et CSS`,
-        experience: `Il s'agit d'un des tout premiers projets que j'ai réaliser, je découvrais seulement toutes les possibilité de ces languages`
+        compétences: `Ce projet à été réalisé en HTML et CSS.`,
+        experience: `Il s'agit d'un des tout premiers projets que j'ai réalisé, je découvrais seulement toutes les possibilité de ces languages.`
     },
     {
         desc: 'Portfolio de Nina Carducci',
         contexte: 'Projet Open Classrooms',
-        compétences: `J'ai travaillé sur l'optimisation et le SEO sur ce projet`,
-        experience: `J'ai appris a me servir de différents outils pour voir ou le site web n'est pas optimiser et comment l'améliorer`
+        compétences: `J'ai travaillé sur l'optimisation et le SEO sur ce projet.`,
+        experience: `J’ai appris à me servir de différents outils pour voir où le site web n’est pas optimisé et comment l’améliorer.`
     },
     {
         desc: `77events, site d'une agence évènementielle`,
         contexte: `Projet Open Classrooms`,
-        compétences: `J'ai travaillé sur le debogage de ce projet`,
-        experience: `Il s'agissais pour moi de la première fois que je travaillais sur un code que je n'avais pas écrit et il m'as fallut un temps d'adaptations pour ne pas me perdre dans ce code inconnu`
+        compétences: `J'ai travaillé sur le debogage de ce projet.`,
+        experience: `Il s'agissait pour moi de la première fois que je travaillais sur un code que je n'avais pas écrit et il m'as fallu un temp d'adaptation pour ne pas me perdre dans ce code inconnu.`
     },
     {
         desc: `Tank War, un jeu 2D en Top-down view`,
         contexte: 'Projet Gaming campus',
-        compétences: 'Ce jeu à été réalisé en Lua avec Love2D',
-        experience: `C'est le tout premier jeu que j'ai créé, J'y ai appris les bases de comment créer un jeu, gérer des collisions, des ennemis, etc...`
+        compétences: 'Ce jeu à été réalisé en Lua avec Love2D.',
+        experience: `C'est le tout premier jeu que j'ai créé, j'y ai appris les bases de comment créer un jeu, gérer des collisions, des ennemis, etc...`
     },
     {
         desc: 'Un jeu de casse brique',
         contexte: 'Projet Gaming campus',
-        compétences: 'Ce jeu à été réalisé en C# avec Monogame',
+        compétences: 'Ce jeu à été réalisé en C# avec Monogame.',
         experience: `Grâce à ce projet, j'ai pu apprendre le C# ainsi qu'approfondir ma gestion des distances, des vitesses et des directions.`
     },
     {
         desc: 'Un infinite runner en 3D',
         contexte: 'Projet Gaming campus',
-        compétences: `J'ai développé ce jeu en C# avec Unity`,
+        compétences: `J'ai développé ce jeu en C# avec Unity.`,
         experience: `Ce fut mon premier jeu en 3D, mais aussi mon premier avec un moteur comme Unity, j'ai pu apprendre beaucoup de choses notamment les bases de la génération procédurale.`
     }
 ]
@@ -74,49 +74,49 @@ export const enportfoliotxt = [
     {
         desc: `Oh my food, delivery service website, alike uber eats`,
         contexte: `Open Classrooms project`,
-        compétences: `This project was written in HTML and scss`,
-        experience: `With this project I learned how to use keyframes animations and scss`
+        compétences: `This project was written in HTML and scss.`,
+        experience: `With this project I learned how to use keyframes animations and scss.`
     },
     {
         desc: `Kasa, a private real estate rental website`,
         contexte: `Open Classrooms project`,
-        compétences: `This project was made with React.js`,
-        experience: `This project was my first time with React, I discovered the variety of components I could create and learned how to use them efficiently`
+        compétences: `This project was made with React.js.`,
+        experience: `This project was my first time with React, I discovered the variety of components I could create and learned how to use them efficiently.`
     },
     {
         desc: `Booki, Holiday activities and rental website`,
         contexte: `Open Classrooms project`,
-        compétences: `This project was written in HTML and CSS`,
-        experience: `It is one of the first project I made, I was still discovering each peculiarities of those languages`
+        compétences: `This project was written in HTML and CSS.`,
+        experience: `It is one of the first project I made, I was still discovering each peculiarities of those languages.`
     },
     {
         desc: `Nina Carducci's portfolio`,
         contexte: `Open Classrooms project`,
-        compétences: `I worked on the SEO and optimisation of this project`,
-        experience: `I learned to use a few tools to check where I could better optimize a website`
+        compétences: `I worked on the SEO and optimisation of this project.`,
+        experience: `I learned to use a few tools to check where I could better optimize a website.`
     },
     {
         desc: `77events, event agency website`,
         contexte: `Open Classrooms project`,
-        compétences: `I worked on debugging that website`,
-        experience: `It was my first time working on a code I didn't wrote so I needed a bit of time to adapt  and not lose myself in that code`
+        compétences: `I worked on debugging that website.`,
+        experience: `It was my first time working on a code I didn't wrote so I needed a bit of time to adapt  and not lose myself in that code.`
     },
     {
         desc: `Tank war, a top-down 2D game`,
         contexte: `Gaming campus project`,
-        compétences: `Developed in Lua with Love2D`,
+        compétences: `Developed in Lua with Love2D.`,
         experience: `It’s the first game I created, I learned the basics of how to create a game, manage collisions, enemies, etc...`
     },
     {
         desc: `A 2D brick breaker game`,
         contexte: `Gaming campus project`,
-        compétences: `Developed in C# with Monogame`,
+        compétences: `Developed in C# with Monogame.`,
         experience: `Thanks to this project, I was able to learn C# and deepen my management of distances, speeds and directions.`
     },
     {
         desc: `A 3D infinite runner`,
         contexte: `Gaming campus project`,
-        compétences: `Developed in C# with Unity`,
+        compétences: `Developed in C# with Unity.`,
         experience: `It was my first 3D game, but also my first with a engine like Unity, I could learn a lot of things including the basics of procedural generation.`
     }
 ]
@@ -150,7 +150,7 @@ export const frTopRightTxt = {
     subtitle2: `différentes facettes du métier de développeur.`,
     txt21: `Je n'ai pas été formé qu'à l'intégration pure et dure, j'ai pu, `,
     txt22: `au fil des projets, développer mes compétences d'optimisation,`,
-    txt23: ` de SEO, de débogage mais aussi de gestion de projets`,
+    txt23: ` de SEO, de débogage mais aussi de gestion de projets.`,
     txt31: `Quant à l'intégration, j'ai eu l'occasion d'utiliser les bases telles qu'HTML et CSS`,
     txt32: `tout au long de la formation mais j'ai pu aussi apprendre a manier `,
     txt33: `le javascript ainsi que certaines librairies telles que React.js et Redux.`
